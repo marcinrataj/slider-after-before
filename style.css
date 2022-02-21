@@ -1,0 +1,63 @@
+.slider-container{
+    width: 800px;
+    height: 800px;
+}
+
+.comparison{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    overflow: hidden;
+}
+
+.base-image{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.getyourguide.com/img/location/54007c07284a6.jpeg/88.jpg");
+    background-size: cover;
+}
+
+.divisor{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/originals/22/0f/b5/220fb5a615615ccdb99b215da59b5077.jpg");
+    background-size: cover;
+}
+
+input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 50%;
+    width: calc(100% + 40px);
+    left: -20px;
+    background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: transparent;
+}
+
+input[type="range"]::-moz-range-thumb{
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background: transparent;
+}
+
+input[type="range"]:focus, input[type="range"]:active{
+    border: none;
+    outline: none;
+}
